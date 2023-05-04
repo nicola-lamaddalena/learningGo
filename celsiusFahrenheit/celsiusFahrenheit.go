@@ -12,6 +12,7 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Println("Celsius to Fahrenheit converter")
 	fmt.Println("Insert a numeric value: ")
+
 	// Get the input, check for error, remove trailing chars
 	inputStr, err := reader.ReadString('\n')
 	if err != nil {
