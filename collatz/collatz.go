@@ -19,5 +19,8 @@ func conjecture(x int) int {
 }
 
 func main() {
-	fmt.Println(conjecture(40000))
+	numbers := [6]int{1000, 100000, 1000000, 10000000, 100000000, 1000000000}
+	for i := 0; i <= len(numbers) + 1; i++{
+		fmt.Println("Steps", numbers[i], ":", conjecture(numbers[i]))
+	}
 }
