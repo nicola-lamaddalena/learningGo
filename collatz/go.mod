@@ -1,3 +1,3 @@
-module example.com/collatz
+module example.com/collatzSteps
 
 go 1.20
