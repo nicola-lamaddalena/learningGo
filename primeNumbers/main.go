@@ -22,9 +22,9 @@ func main() {
 	primes := make(map[string]int)
 	for i := 0; i < value; i++ {
 		if isPrime(i) {
-			primes["even"]++
+			primes["primes"]++
 		} else {
-			primes["odd"]++
+			primes["not primes"]++
 		}
 	}
 	fmt.Println("In the first", value, "numbers there are:")
