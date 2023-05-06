@@ -1,7 +1,10 @@
+// Prints the primes under a given value
 package main
 
 import (
 	"fmt"
+	"os"
+	"strconv"
 )
 
 func isPrime(value int) bool {
@@ -18,9 +21,10 @@ func isPrime(value int) bool {
 	return prime
 }
 func main() {
-	value := 1000
+	value := os.Args[1]
+	intValue, _ := strconv.Atoi(value)
 	primes := make(map[string]int)
-	for i := 0; i < value; i++ {
+	for i := 0; i < intValue; i++ {
 		if isPrime(i) {
 			primes["primes"]++
 		} else {
