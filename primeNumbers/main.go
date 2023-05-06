@@ -15,7 +15,7 @@ func isPrime(value int) bool {
 	for i := 2; i < value; i++ {
 		if value%i == 0 {
 			prime = false
-			return false
+			return prime
 		}
 	}
 	return prime
