@@ -31,7 +31,7 @@ func main() {
 			primes["not primes"]++
 		}
 	}
-	fmt.Println("In the first", value, "numbers there are:")
+	fmt.Printf("In the first %v numbers there are:\n", value)
 	for k, v := range primes {
 		fmt.Println(k, "-", v)
 	}

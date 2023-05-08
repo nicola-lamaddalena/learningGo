@@ -15,5 +15,5 @@ func main() {
 
 	// Convert the Celsius value to a Fahrenheit one, print it
 	fahrenheitOutput := (float64(intInput) * 9 / 5) + 32
-	fmt.Println(intInput, "degrees Celsius correspond to", fahrenheitOutput, "degrees Fahrenheit")
+	fmt.Printf("%v° Celsius degrees correspond to %v° Fahrenheit degrees.\n", intInput, fahrenheitOutput)
 }
