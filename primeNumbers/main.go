@@ -1,4 +1,4 @@
-// Prints the primes under a given value
+// Prints the primes under a value given in the command line
 package main
 
 import (
@@ -9,7 +9,7 @@ import (
 
 func isPrime(value int) bool {
 	prime := true
-	if value == 1 {
+	if value == 1 || value == 0 {
 		return false
 	}
 	for i := 2; i < value; i++ {
@@ -21,9 +21,15 @@ func isPrime(value int) bool {
 	return prime
 }
 func main() {
-	value := os.Args[1]
-	intValue, _ := strconv.Atoi(value)
+	value := os.Args[1] // get the value input after the file name
 	primes := make(map[string]int)
+
+	intValue, err := strconv.Atoi(value)
+	if err != nil {
+		fmt.Println("Error - Integer value only")
+		return
+	}
+
 	for i := 0; i < intValue; i++ {
 		if isPrime(i) {
 			primes["primes"]++
