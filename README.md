@@ -5,3 +5,4 @@
 - 05/05/23: Algorithm that computes the prime below 1000
 - 10/05/23: Simple todo app with CRUD operations, made with Gin
 - 13/05/23: Queue implementation using struct
+- 13/05/23: Stack implementation using struct
