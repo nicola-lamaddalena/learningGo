@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"time"
 )
 
 func isPrime(value int) bool {
@@ -12,7 +13,11 @@ func isPrime(value int) bool {
 	if value == 1 || value == 0 {
 		return false
 	}
-	for i := 2; i < value; i++ {
+	if value%2 == 0 {
+		return false
+	}
+
+	for i := 3; i < value; i++ {
 		if value%i == 0 {
 			prime = false
 			return prime
@@ -29,7 +34,7 @@ func main() {
 		fmt.Println("Error - Integer value only")
 		return
 	}
-
+	start := time.Now()
 	for i := 0; i < intValue; i++ {
 		if isPrime(i) {
 			primes["primes"]++
@@ -41,4 +46,5 @@ func main() {
 	for k, v := range primes {
 		fmt.Println(k, "-", v)
 	}
+	fmt.Printf("Time elapsed %v\n", time.Since(start))
 }
