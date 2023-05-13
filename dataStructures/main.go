@@ -1,46 +1,27 @@
 package main
 
-import "fmt"
-
-type Queue struct {
-	values []int
-	size   int
-}
-
-func (q *Queue) enqueue(element int) {
-	if len(q.values) == q.size {
-		fmt.Println("The queue is full")
-		return
-	}
-	q.values = append(q.values, element)
-}
-
-func (q *Queue) dequeue() {
-	if len(q.values) == 0 {
-		fmt.Println("The queue is empty")
-		return
-	}
-	q.values = q.values[1:]
-}
-
-func (q *Queue) peek() int {
-	if len(q.values) == 0 {
-		fmt.Println("The queue is empty")
-		return 0
-	}
-	return q.values[len(q.values)-1]
-}
-
 func main() {
-	q := Queue{size: 2}
+	// q := Queue{size: 2}
+	// s := Stack{size: 4}
 
-	q.enqueue(1)
-	q.enqueue(13)
-	fmt.Println(q.values)
-	fmt.Println(q.peek())
-	q.dequeue()
-	fmt.Println(q.values)
-	q.dequeue()
-	fmt.Println(q.values)
-	q.dequeue()
+	// q.enqueue(1)
+	// q.enqueue(13)
+	// fmt.Println(q.values)
+	// fmt.Println(q.peek())
+	// q.dequeue()
+	// fmt.Println(q.values)
+	// q.dequeue()
+	// fmt.Println(q.values)
+	// q.dequeue()
+
+	// s.peek()
+	// s.push(5)
+	// s.push(13)
+	// fmt.Println(s.values)
+	// fmt.Println("peek: ", s.peek())
+	// s.pop()
+	// fmt.Println(s.values)
+	// s.pop()
+	// fmt.Println(s.values)
+	// s.pop()
 }
