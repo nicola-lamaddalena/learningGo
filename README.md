@@ -7,3 +7,5 @@
 - 13/05/23: Queue implementation using struct
 - 13/05/23: Stack implementation using struct
 - 16/05/23: Linked List implementation using struct
+- 17/05/23: Linear search algorithm
+- 17/05/23: Binary search algorithm
