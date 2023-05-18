@@ -9,4 +9,8 @@ func main() {
 
 	arr2 := []int{2, 5, 6, 11, 18, 54, 93}
 	fmt.Println(binarySearch(arr2, 100))
+
+	arr3 := []int{5, 6, 93, 11, 54, 2, 18}
+	bubble(arr3)
+	fmt.Println(arr3)
 }
