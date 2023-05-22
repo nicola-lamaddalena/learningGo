@@ -9,3 +9,4 @@
 - 16/05/23: Linked List implementation using struct
 - 17/05/23: Linear search algorithm
 - 17/05/23: Binary search algorithm
+- 18/05/23: Bubble sort algorithm
