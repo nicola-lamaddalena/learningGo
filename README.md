@@ -10,3 +10,5 @@
 - 17/05/23: Linear search algorithm
 - 17/05/23: Binary search algorithm
 - 18/05/23: Bubble sort algorithm
+- 22/05/23: Babilonian trick to create Pythagorean triple
+- 26/05/23: Sierpinski Triangle drawing
