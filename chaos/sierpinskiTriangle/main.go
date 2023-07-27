@@ -6,12 +6,6 @@ import (
 	"github.com/fogleman/gg"
 )
 
-type Point struct {
-	x float64
-	y float64
-	r float64
-}
-
 func main() {
 	const width = 1000
 	const height = 1000
